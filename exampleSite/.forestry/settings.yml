@@ -66,6 +66,6 @@ build:
   preview_docker_image: forestryio/hugo:latest
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: cd exampleSite && hugo server -D -E -F --port 8080 --bind
-    0.0.0.0 --renderToDisk --themesDir=../.. -d public
+  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
+    -s exampleSite --themesDir=../.. -d public
 version: 0.58.2
